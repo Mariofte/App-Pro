@@ -11,6 +11,14 @@ class App:
     
     def load(self) -> None:
         try:
+            self.st.set_page_config(
+                page_title="Web App",
+                page_icon="🚀",
+                layout="wide",
+                initial_sidebar_state="expanded",
+                
+            )
+                
             self.st.navigation(
                 self._build_pages(),
                 position="sidebar",
@@ -20,18 +28,31 @@ class App:
         except Error as e:
             self.st.warning(f"Error al cargar la aplicación: {e}")
     
-    def path(self) -> str:
-        return self.os.path.dirname(self.os.path.abspath(__file__))
-    
     def _build_pages(self) -> dict[str, list[StreamlitPage]]:
         return {
             "Inicio": [
                 self.st.Page(
-                    page=self.path() + "\\views\\index.py",
+                    page=os.path.join("src", "views", "index.py"),
                     title="Inicio",
                     icon="🏠",
                     url_path="/",
                     default=True
+                )
+            ],
+            
+            "Paginas": [
+                # src\views\victim.py
+                self.st.Page(
+                    page=os.path.join("src", "views", "victim.py"),
+                    title="Victima",
+                    icon="ℹ️",
+                    url_path="/vitima"
+                ),
+                self.st.Page(
+                    page=os.path.join("src", "views", "bulli.py"),
+                    title="Bulliing",
+                    icon="📞",
+                    url_path="/bulli"
                 )
             ]
         }
