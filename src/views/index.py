@@ -1,4 +1,4 @@
-from src.utils.layout import Layout_template
+from src.utils import Layout_template
 
 # :speaking_head:
 class Index(Layout_template):
@@ -22,4 +22,6 @@ class Index(Layout_template):
     
     def footer(self):
         self.st.write("footer")
-        
+
+if __name__ == "__main__":
+    Index().render()

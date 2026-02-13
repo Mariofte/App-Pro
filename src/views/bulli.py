@@ -1,4 +1,4 @@
-from src.utils.layout import Layout_template
+from src.utils import Layout_template
 
 # :speaking_head:
 class Bullying(Layout_template):
