@@ -45,14 +45,12 @@ class App:
                 self.st.Page(
                     page=os.path.join("src", "views", "victim.py"),
                     title="Victima",
-                    icon="ℹ️",
-                    url_path="/vitima"
+                    url_path="/victima"
                 ),
                 self.st.Page(
                     page=os.path.join("src", "views", "bulli.py"),
-                    title="Bulliing",
-                    icon="📞",
-                    url_path="/bulli"
+                    title="Bullying",
+                    url_path="/bullying"
                 )
             ]
         }

@@ -6,7 +6,7 @@ class Index(Layout_template):
         super().__init__()
         
     def header(self):
-        self.st.title("🛑 Prevención del Bullying")
+        self.st.title("Prevención del Bullying")
         self.st.subheader("Información y concientización escolar")
         self.st.divider()
     
@@ -32,10 +32,10 @@ class Index(Layout_template):
         self.st.subheader("Tipos de bullying")
 
         self.st.markdown("""
-- 👊 Físico
-- 🗣 Verbal
-- 🚫 Social
-- 💻 Ciberbullying
+- Físico
+- Verbal
+- Social
+- Ciberbullying
         """)
     
     def footer(self):

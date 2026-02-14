@@ -6,7 +6,7 @@ class Bullying(Layout_template):
         super().__init__()
         
     def header(self):
-        self.st.title("👤 Información para quien ejerce bullying")
+        self.st.title("Información para quien ejerce bullying")
         self.st.divider()
     
     def main(self):
