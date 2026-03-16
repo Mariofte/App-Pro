@@ -13,7 +13,6 @@ class App:
         try:
             self.st.set_page_config(
                 page_title="Web App",
-                page_icon="🚀",
                 layout="wide",
                 initial_sidebar_state="expanded",
                 
@@ -34,7 +33,6 @@ class App:
                 self.st.Page(
                     page=os.path.join("src", "views", "index.py"),
                     title="Inicio",
-                    icon="🏠",
                     url_path="/",
                     default=True
                 )

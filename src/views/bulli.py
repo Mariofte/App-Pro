@@ -1,7 +1,7 @@
-from src.utils import Layout_template
+from src.utils import Layout
 
 # :speaking_head:
-class Bullying(Layout_template):
+class Bullying(Layout):
     def __init__(self):
         super().__init__()
         

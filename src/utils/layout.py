@@ -3,7 +3,7 @@ from streamlit.errors import Error
 from abc import ABC, abstractmethod
 
 
-class Layout_template(ABC):
+class Layout(ABC):
     def __init__(self):
         super().__init__()
         self.st = st
@@ -13,7 +13,7 @@ class Layout_template(ABC):
             self.body()
         
         except Error as e:
-            self.st.error(f"Error in your code:{e}")
+            self.st.error(f"Error:{e}")
         
     def body(self) -> None:
         self.header()

@@ -1,7 +1,7 @@
-from src.utils import Layout_template
+from src.utils import Layout
 
 # :speaking_head:
-class Index(Layout_template):
+class Index(Layout):
     def __init__(self):
         super().__init__()
         

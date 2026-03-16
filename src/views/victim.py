@@ -1,8 +1,8 @@
 from turtle import st
-from src.utils import Layout_template
+from src.utils import Layout
 
 # :speaking_head:
-class Victim(Layout_template):
+class Victim(Layout):
     def __init__(self):
         super().__init__()
         
