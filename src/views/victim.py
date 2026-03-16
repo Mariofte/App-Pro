@@ -1,4 +1,3 @@
-from turtle import st
 from src.utils import Layout
 
 # :speaking_head:
